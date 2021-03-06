@@ -1,7 +1,20 @@
 estoque={ "tomate": [ 1000, 2.30], "alface": [ 500, 0.45], "batata": [ 2001, 1.20], "feijão": [ 100, 1.50] }
-venda = [ ["tomate", 5], ["batata", 10], ["alface",5] ]
 total = 0
 print("Vendas:\n")
+print('Digite um valor para realizar a compra')
+print('1->tomate')
+print('2->batata')
+print('3->alface')
+print('*********************')
+produto = int(input('Digite o numero:'))
+quantidade = int(input('Digite o numero:'))
+
+if produto==1:
+  venda = [["tomate", quantidade]]
+elif produto ==2:
+  venda = [["batata", quantidade]]
+elif produto ==3:
+   venda = [["alface", quantidade]]
 
 for operação in venda:
 	produto, quantidade = operação
